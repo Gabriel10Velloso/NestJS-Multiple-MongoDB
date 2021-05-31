@@ -1,7 +1,7 @@
 export interface Student {
-  FirstName: String;
-  LastName: string;
-  Standard: Number;
-  FatherName: String;
-  MotherName: String;
+  first_name: string;
+  last_name: string;
+  standard: number;
+  father_name: string;
+  mother_name: string;
 }

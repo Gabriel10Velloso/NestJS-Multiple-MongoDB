@@ -9,26 +9,26 @@ import { animalSchema } from './wildlife/animal.schema';
 
 @Module({
   imports: [
-    
-    MongooseModule.forFeature([
-      {
-        name: 'Student',
-        schema: studentSchema,
-        collection: 'Student',
-        
-      },
-    ],'myWorldDb'),
 
     MongooseModule.forFeature([
       {
-        name: 'Animals',
+        name: 'student',
+        schema: studentSchema,
+        collection: 'student',
+
+      },
+    ], 'myWorldDb'),
+
+    MongooseModule.forFeature([
+      {
+        name: 'animals',
         schema: animalSchema,
-        collection: 'Animals'
+        collection: 'animals'
       }
-    ],'wildLifeDb'),
+    ], 'wildLifeDb'),
 
   ],
   controllers: [TestController],
   providers: [TestService],
 })
-export class SchemaModule {}
+export class SchemaModule { }

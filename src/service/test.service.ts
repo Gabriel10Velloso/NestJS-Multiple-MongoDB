@@ -8,8 +8,8 @@ import { Student } from 'src/model/student.model';
 @Injectable()
 export class TestService {
   constructor(
-    @InjectModel('Student') private readonly studentModel: Model<Student>,
-    @InjectModel('Animals') private readonly animalModel: Model<Animal>) {
+    @InjectModel('student') private readonly studentModel: Model<Student>,
+    @InjectModel('animals') private readonly animalModel: Model<Animal>) {
 
   }
 

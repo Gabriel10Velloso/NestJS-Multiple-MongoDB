@@ -1,3 +1,3 @@
-export interface Animal{
-  Name:String
+export interface Animal {
+  name: string
 }
