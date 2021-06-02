@@ -14,7 +14,7 @@ export class TestService {
   }
 
   async postStudent(val: any): Promise<any> {
-    const { FirstName, LastName, Standard, FatherName, MotherName } = val;
+    // const { FirstName, LastName, Standard, FatherName, MotherName } = val;
 
     const newStudent = await new this.studentModel(val);
     return newStudent.save();

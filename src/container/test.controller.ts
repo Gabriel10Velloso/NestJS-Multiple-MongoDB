@@ -21,8 +21,8 @@ export class TestController {
     this.animal = {
       name: 'Lipe',
     }
-    // this.postTest();
-    // this.postTest2();
+    this.postTest();
+    this.postTest2();
   }
 
   @Post('post')
